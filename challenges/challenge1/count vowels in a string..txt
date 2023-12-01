@@ -1,0 +1,15 @@
+
+Challenge 1:
+
+Count Vowels in a String
+
+Write a function that takes a string as input and returns the count of vowels (a, e, i, o, u) in the string.
+The function should be case-insensitive, meaning it should count both uppercase and lowercase vowels.
+
+Example:
+
+Input: "Hello, World!"
+Output: 3
+
+Input: "Programming is fun"
+Output: 5
