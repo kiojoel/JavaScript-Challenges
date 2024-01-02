@@ -1,0 +1,47 @@
+Write a function processApplicant that takes an object as its parameter representing applicant information.
+The object should include fields such as
+firstName, lastName, age, testGrade (on a scale of 1-10),maritalStatus (single or married) and gender (M or F).
+If any of these fields are null, log "Application rejected, information not complete" to the console.
+
+If the information is complete but the testGrade is below 6, add the applicant to a failedApplicant array and log "You failed the test,
+Try again another time." to the console. If the testGrade is 6 or above,
+ add the applicant to a newEmployee array and log "Congratulations! You got the job."
+
+Test Cases:
+
+Rejected Application:
+let rejectedApplicant = {
+    firstName: null,
+    lastName: "Doe",
+    age: 25,
+    testGrade: 8,
+    maritalStatus: "single",
+    gender: "M"
+};
+processApplicant(rejectedApplicant);
+
+
+
+
+Failed Applicant:
+let failedTestApplicant = {
+    firstName: "John",
+    lastName: "Smith",
+    age: 30,
+    testGrade: 4,
+    maritalStatus: "married",
+    gender: "F"
+};
+processApplicant(failedTestApplicant);
+
+
+Successful Applicant:
+let successfulApplicant = {
+    firstName: "Alice",
+    lastName: "Johnson",
+    age: 28,
+    testGrade: 9,
+    maritalStatus: "single",
+    gender: "F"
+};
+processApplicant(successfulApplicant);
